@@ -4,6 +4,7 @@ module.exports = {
 		'./app/**/*.{js,ts,jsx,tsx,mdx}',
 		'./pages/**/*.{js,ts,jsx,tsx,mdx}',
 		'./components/**/*.{js,ts,jsx,tsx,mdx}',
+		'./src/components/**/*.{js,ts,jsx,tsx,mdx}',
 	],
 	theme: {
 		extend: {
@@ -13,10 +14,10 @@ module.exports = {
 				fontMedium: ['Poppins Medium', 'sans-serif'],
 			},
 			colors: {
-				'primary': '#27272A',
-				'secondary': '##B91C1C',
-				'tertiary': '#ffffff'
-			}
+				primary: '#27272A',
+				secondary: '##B91C1C',
+				tertiary: '#ffffff',
+			},
 		},
 	},
 	plugins: [],
