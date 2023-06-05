@@ -21,9 +21,9 @@ const PopularMerchant = () => {
 			</p>
 			<div className="grid grid-cols-1 lg:grid-cols-4">
 				<div className="col-span-1">
-					<ul className="flex flex-col">
+					<ul className="flex flex-col gap-12">
 						<li
-							className={`lg:mb-14 `}
+							className={``}
 							onClick={() => handleTabClick('fashion')}>
 							<p
 								className={`cursor-pointer inline-block ${
@@ -34,7 +34,7 @@ const PopularMerchant = () => {
 						</li>
 
 						<li
-							className={`lg:mb-14 `}
+							className={` `}
 							onClick={() => handleTabClick('jewellery')}>
 							<p
 								className={`cursor-pointer inline-block ${
@@ -45,7 +45,7 @@ const PopularMerchant = () => {
 							</p>
 						</li>
 						<li
-							className={`lg:mb-14 `}
+							className={` `}
 							onClick={() => handleTabClick('electronics')}>
 							<p
 								className={`cursor-pointer inline-block ${
@@ -56,7 +56,7 @@ const PopularMerchant = () => {
 							</p>
 						</li>
 						<li
-							className={`lg:mb-14`}
+							className={``}
 							onClick={() => handleTabClick('furniture')}>
 							<p
 								className={`cursor-pointer inline-block ${
