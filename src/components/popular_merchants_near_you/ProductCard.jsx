@@ -6,38 +6,42 @@ const ProductCard = ({ productDetails }) => {
 		productDetails;
 
 	return (
-		<div className="p-5 flex flex-col gap-1 items-center shadow-lg rounded w-72">
-			<div className="h-40 relative w-full">
-				<button className="p-1 absolute right-1 top-1 border z-10 bg-white rounded-sm">
+		<div className="p-[15px] flex flex-col gap-[10px] items-center shadow-lg rounded w-[280px] h-[387px]">
+			<div className="h-[160px] relative w-[250px]">
+				<button className="pr-[10px] pl-[10px] pt-[5px] pb-[5px] absolute right-1 top-1 border z-10 bg-white rounded-sm">
 					<p className="text-xs">+ Follow</p>
 				</button>
-				<div className="pl-2 pt-1 flex flex-row items-center gap-1 cursor-pointer p-1 text-xs absolute bottom-1 left-1 bg-white border z-10 rounded-sm">
-					<p className="p-0.5  bg-gray-600 text-white rounded-sm">
+				<div className="pl-[8px] pt-[4px] pr-[8px] pb-[4px] flex flex-row items-center gap-[8px] cursor-pointer p-1 text-xs absolute bottom-1 left-1 bg-white border z-10 rounded-sm">
+					<p className="p-[5px]  bg-gray-600 text-white rounded-sm">
 						⭐ {rating}
 					</p>
-					<p className="p-0.5 ">{numberOfRatings} Ratings</p>
+					<p className="p-[5px] ">{numberOfRatings} Ratings</p>
 				</div>
 				<div className="absolute top-0 left-0 inset-0">
 					<Image
-						className="w-full h-full object-cover"
+						className="object-cover"
 						src={image}
-						width={100}
-						height={100}
+						width={250}
+						height={160}
 						alt={name}
 					/>
 				</div>
 			</div>
-			<div className='w-full'>
-				<p className="mt-1 mb-1 text-sm font-semibold">{name}</p>
-				<div className="flex flex-row items-center gap-1 text-xs">
-					<span className="flex flex-col justify-center mt-2 mb-2 p-1 border border-gray-400 bg-gray-50 rounded-sm">
+
+			<div className="flex h-[23px] w-[250px] items-start">
+				<p className="font-semibold">{name}</p>
+			</div>
+
+			<div className="flex flex-col  w-[250px] h-[74px] p-0">
+				<div className="flex flex-row items-center gap-[8px] text-xs h-[40px]">
+					<span className="border-box p-1 border border-gray-400 bg-gray-50 rounded-sm]">
 						<p>₹{price}</p>
 					</span>
-					<p className="p-1">{description}</p>
+					<p className="">{description}</p>
 				</div>
 
 				<ul className="text-xs ">
-					<li className="flex items-center gap-1">
+					<li className="flex items-center gap-[5px] w-[250px]">
 						<div className="">
 							<Image
 								src="/images/listmarker.svg"
@@ -48,7 +52,7 @@ const ProductCard = ({ productDetails }) => {
 						</div>
 						<span>Shirts starting from $599</span>
 					</li>
-					<li className="flex items-center gap-1">
+					<li className="flex items-center  gap-[5px] w-[250px]">
 						<div className="">
 							<Image
 								src="/images/listmarker.svg"
@@ -60,29 +64,30 @@ const ProductCard = ({ productDetails }) => {
 						<span> Free Delivery</span>
 					</li>
 				</ul>
-				<div className="flex items-center">
-					<button className="w-full p-1 mt-1 border border-gray-400  text-center  bg-gray-50 rounded">
-						<p className="font-semibold text-sm"> View Details</p>
-					</button>
+			</div>
+
+			
+			<button className="flex items-center justify-center gap-[10px] w-[250px] pt-[6px] pb-[6px] pl-[36px] pr-[36px] border border-gray-400  bg-gray-50 rounded">
+				<p className="font-semibold"> View Details</p>
+			</button>
+	
+
+			<div className="flex flex-row items-center justify-between text-xs w-[250px]">
+				<div className="flex flex-row items-center gap-1">
+					<span className="text-green-600 font-bold">Open</span>
+					<p className="font-light">until 10:30</p>
 				</div>
 
-				<div className="flex flex-row items-center justify-between text-xs mt-1">
-					<div className="flex flex-row items-center gap-1">
-						<span className="text-green-600 font-bold">Open</span>
-						<p className="font-light">until 10:30</p>
+				<div className="flex flex-row gap-1 items-center">
+					<div className="">
+						<Image
+							src="/images/imap.svg"
+							width={10}
+							height={10}
+							alt="SVG map icon"
+						/>
 					</div>
-
-					<div className="flex flex-row gap-1 items-center">
-						<div className="">
-							<Image
-								src="/images/imap.svg"
-								width={10}
-								height={10}
-								alt="SVG map icon"
-							/>
-						</div>
-						<span className="font-light">10km away</span>
-					</div>
+					<span className="font-light">10km away</span>
 				</div>
 			</div>
 		</div>

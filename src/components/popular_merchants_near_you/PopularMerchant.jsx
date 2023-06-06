@@ -15,13 +15,13 @@ const PopularMerchant = () => {
 	};
 
 	return (
-		<div className="w-4/5 m-auto ">
+		<div className="w-[1200px] m-auto ">
 			<p className="text-lg font-bold mb-8 border-b-2 border-red-700 inline-block">
 				POPULAR MERCHANTS NEAR YOU
 			</p>
-			<div className="grid grid-cols-4">
-				<div className="col-span-1">
-					<ul className="flex flex-col gap-14">
+			<div className="flex flex-row justify-between items-start gap-[36px]">
+				<div className="hidden md:block w-[206px] h-[387px]">
+					<ul className="flex flex-col gap-[32px] ">
 						<li
 							className={``}
 							onClick={() => handleTabClick('fashion')}>
@@ -67,7 +67,7 @@ const PopularMerchant = () => {
 						</li>
 					</ul>
 				</div>
-				<div className="h-full col-span-3 ">
+				<div className="">
 					<ProductGrid products={productList} />
 				</div>
 			</div>
