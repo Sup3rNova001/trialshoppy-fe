@@ -6,29 +6,28 @@ const ProductCard = ({ productDetails }) => {
 		productDetails;
 
 	return (
-		<div className="p-2 flex flex-col gap-1 items-center shadow-lg rounded h-full">
-			<div className="w-full">
-				<div className="h-1/2 relative">
-					<button className="p-1 absolute right-1 top-1 border z-10 bg-white rounded-sm">
-						<p className="text-xs">+ Follow</p>
-					</button>
-					<div className="pl-2 pt-1 flex flex-row items-center gap-1 cursor-pointer p-1 text-xs absolute bottom-1 left-1 bg-white border z-10 rounded-sm">
-						<p className="p-0.5  bg-gray-600 text-white rounded-sm">
-							⭐ {rating}
-						</p>
-						<p className="p-0.5 ">{numberOfRatings} Ratings</p>
-					</div>
-					<div className="absolute top-0 left-0 inset-0">
-						<Image
-							className="w-full h-full object-cover"
-							src={image}
-							width={100}
-							height={100}
-							alt={name}
-						/>
-					</div>
+		<div className="p-5 flex flex-col gap-1 items-center shadow-lg rounded w-72">
+			<div className="h-40 relative w-full">
+				<button className="p-1 absolute right-1 top-1 border z-10 bg-white rounded-sm">
+					<p className="text-xs">+ Follow</p>
+				</button>
+				<div className="pl-2 pt-1 flex flex-row items-center gap-1 cursor-pointer p-1 text-xs absolute bottom-1 left-1 bg-white border z-10 rounded-sm">
+					<p className="p-0.5  bg-gray-600 text-white rounded-sm">
+						⭐ {rating}
+					</p>
+					<p className="p-0.5 ">{numberOfRatings} Ratings</p>
 				</div>
-
+				<div className="absolute top-0 left-0 inset-0">
+					<Image
+						className="w-full h-full object-cover"
+						src={image}
+						width={100}
+						height={100}
+						alt={name}
+					/>
+				</div>
+			</div>
+			<div className='w-full'>
 				<p className="mt-1 mb-1 text-sm font-semibold">{name}</p>
 				<div className="flex flex-row items-center gap-1 text-xs">
 					<span className="flex flex-col justify-center mt-2 mb-2 p-1 border border-gray-400 bg-gray-50 rounded-sm">

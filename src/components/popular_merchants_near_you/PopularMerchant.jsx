@@ -19,9 +19,9 @@ const PopularMerchant = () => {
 			<p className="text-lg font-bold mb-8 border-b-2 border-red-700 inline-block">
 				POPULAR MERCHANTS NEAR YOU
 			</p>
-			<div className="grid grid-cols-1 lg:grid-cols-4">
+			<div className="grid grid-cols-4">
 				<div className="col-span-1">
-					<ul className="flex flex-col gap-12">
+					<ul className="flex flex-col gap-14">
 						<li
 							className={``}
 							onClick={() => handleTabClick('fashion')}>
