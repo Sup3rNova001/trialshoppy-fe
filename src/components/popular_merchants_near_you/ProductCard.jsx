@@ -7,8 +7,8 @@ const ProductCard = ({ productDetails }) => {
 
 	return (
 		<div className="p-[15px] flex flex-col gap-[10px] items-center shadow-lg rounded w-[280px] h-[387px]">
-			<div className="h-[160px] relative w-[250px]">
-				<button className="pr-[10px] pl-[10px] pt-[5px] pb-[5px] absolute right-1 top-1 border z-10 bg-white rounded-sm">
+			<div className="h-[160px] relative w-[211px] md:w-[250px] m-auto">
+				<button className=" hidden md:block pr-[10px] pl-[10px] pt-[5px] pb-[5px] absolute right-1 top-1 border z-10 bg-white rounded-sm">
 					<p className="text-xs">+ Follow</p>
 				</button>
 				<div className="pl-[8px] pt-[4px] pr-[8px] pb-[4px] flex flex-row items-center gap-[8px] cursor-pointer p-1 text-xs absolute bottom-1 left-1 bg-white border z-10 rounded-sm">
@@ -17,11 +17,11 @@ const ProductCard = ({ productDetails }) => {
 					</p>
 					<p className="p-[5px] ">{numberOfRatings} Ratings</p>
 				</div>
-				<div className="absolute top-0 left-0 inset-0">
+				<div className="absolute inset-0">
 					<Image
-						className="object-cover"
+						className=" w-full h-full object-cover"
 						src={image}
-						width={250}
+						width={200}
 						height={160}
 						alt={name}
 					/>
