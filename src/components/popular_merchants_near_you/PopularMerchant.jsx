@@ -23,7 +23,7 @@ const PopularMerchant = () => {
 	};
 
 	return (
-		<div className=" m-auto">
+		<div className="m-auto">
 			<div className='text-xl font-bold text-center md:text-left'>
 				<h2 className="border-b-2 mb-5 border-red-700 inline-block ">
 					POPULAR MERCHANTS NEAR YOU
